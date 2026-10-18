@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FOREX TRADING PRO | Market Analysis</title>
+<meta name="description" content="Join Forex Trading Pro for educational Forex market analysis, currency pair insights and trading education.">
+<meta name="theme-color" content="#07111f">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#07111f;
+    color:#ffffff;
+}
+
+.container{
+    width:100%;
+    max-width:460px;
+    margin:auto;
+    padding:28px 16px;
+    text-align:center;
+}
+
+/* Online Status */
+.online{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:#102c2b;
+    color:#4ade80;
+    padding:9px 16px;
+    border:1px solid #205347;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.dot{
+    width:8px;
+    height:8px;
+    background:#4ade80;
+    border-radius:50%;
+    box-shadow:0 0 10px #4ade80;
+}
+
+/* Profile */
+.profile{
+    width:112px;
+    height:112px;
+    margin:25px auto 14px;
+    border-radius:50%;
+    padding:4px;
+    background:linear-gradient(135deg,#00e5ff,#246bfe,#00ff9d);
+    box-shadow:0 0 25px #087cff55;
+    overflow:hidden;
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+h1{
+    font-size:27px;
+    font-weight:900;
+    line-height:1.25;
+    margin:12px 0;
+    letter-spacing:.5px;
+}
+
+.gradient{
+    background:linear-gradient(90deg,#00e5ff,#00ff9d);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.tag{
+    color:#a7b8cc;
+    font-size:13px;
+    line-height:1.7;
+}
+
+/* Market Badge */
+.market{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:22px 0;
+}
+
+.pair{
+    padding:9px 12px;
+    background:#111f32;
+    border:1px solid #263951;
+    border-radius:9px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* CTA */
+.btn{
+    display:block;
+    width:100%;
+    padding:16px 12px;
+    border-radius:12px;
+    background:linear-gradient(135deg,#00d5ff,#1675ff);
+    color:#06101e;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:900;
+    margin:18px 0;
+    box-shadow:0 0 22px #087cff38;
+    transition:transform .2s;
+}
+
+.btn:active{
+    transform:scale(.98);
+}
+
+.btn-secondary{
+    background:#101f33;
+    color:#ffffff;
+    border:1px solid #2c4665;
+    box-shadow:none;
+}
+
+/* Stats */
+.stats{
+    display:flex;
+    gap:9px;
+    margin:24px 0;
+}
+
+.card{
+    flex:1;
+    min-width:0;
+    padding:16px 5px;
+    border-radius:12px;
+    background:#101c2d;
+    border:1px solid #1e3048;
+}
+
+.number{
+    color:#00e5ff;
+    font-size:20px;
+    font-weight:900;
+    margin-bottom:6px;
+}
+
+.card small{
+    color:#a7b8cc;
+    font-size:11px;
+}
+
+/* Content */
+.heading{
+    font-size:21px;
+    font-weight:900;
+    line-height:1.5;
+    margin-top:26px;
+}
+
+.sub{
+    color:#9eafc4;
+    font-size:13px;
+    line-height:1.8;
+    margin:10px 0 22px;
+}
+
+/* Feature Cards */
+.feature{
+    display:flex;
+    align-items:center;
+    gap:13px;
+    text-align:left;
+    padding:16px 14px;
+    margin:11px 0;
+    border-radius:12px;
+    background:#101c2d;
+    border:1px solid #20324a;
+}
+
+.icon{
+    width:43px;
+    height:43px;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:10px;
+    background:#123149;
+    font-size:22px;
+}
+
+.feature strong{
+    display:block;
+    font-size:14px;
+    margin-bottom:5px;
+}
+
+.feature p{
+    color:#9eafc4;
+    font-size:12px;
+    line-height:1.5;
+}
+
+/* Risk Notice */
+.notice{
+    margin-top:22px;
+    padding:14px;
+    border-radius:10px;
+    background:#302416;
+    border:1px solid #62451c;
+    color:#ffd18a;
+    font-size:12px;
+    line-height:1.7;
+    text-align:left;
+}
+
+/* Footer */
+.footer{
+    border-top:1px solid #1e3048;
+    margin-top:28px;
+    padding-top:20px;
+    color:#7f91a8;
+    font-size:12px;
+    line-height:1.8;
+}
+
+.footer a{
+    color:#00d5ff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.disclaimer{
+    margin-top:16px;
+    font-size:10px;
+    color:#718096;
+    line-height:1.7;
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="online">
+        <span class="dot"></span>
+        FOREX MARKET EDUCATION
+    </div>
+
+    <div class="profile">
+        <img src="profile.jpg"
+             alt="Forex Trading Pro Profile"
+             onerror="this.style.display='none'">
+    </div>
+
+    <h1>
+        FOREX TRADING<br>
+        <span class="gradient">PRO</span>
+    </h1>
+
+    <div class="tag">
+        Learn the Market. Understand the Trend.<br>
+        Build Your Trading Knowledge.
+    </div>
+
+    <div class="market">
+        <span class="pair">EUR/USD</span>
+        <span class="pair">GBP/USD</span>
+        <span class="pair">XAU/USD GOLD</span>
+        <span class="pair">USD/JPY</span>
+    </div>
+
+    <a class="btn"
+       href="https://t.me/+TaxDfvYuylsyODc1"
+       target="_blank"
+       rel="noopener noreferrer">
+       JOIN FREE TELEGRAM CHANNEL →
+    </a>
+
+    <div class="stats">
+        <div class="card">
+            <div class="number">24/5</div>
+            <small>Forex Market</small>
+        </div>
+        <div class="card">
+            <div class="number">FREE</div>
+            <small>Learning Content</small>
+        </div>
+        <div class="card">
+            <div class="number">LIVE</div>
+            <small>Market Insights</small>
+        </div>
+    </div>
+
+    <div class="heading">
+        Explore the World of<br>
+        <span class="gradient">Forex Trading</span>
+    </div>
+
+    <div class="sub">
+        Get educational market insights, understand currency
+        movements and learn risk management concepts.
+    </div>
+
+    <div class="feature">
+        <div class="icon">📈</div>
+        <div>
+            <strong>Forex Market Analysis</strong>
+            <p>Learn about currency pairs, price movements and market trends.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="icon">🥇</div>
+        <div>
+            <strong>Gold Market Insights</strong>
+            <p>Understand XAU/USD price action and the factors affecting gold.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="icon">📚</div>
+        <div>
+            <strong>Trading Education</strong>
+            <p>Explore technical analysis, chart patterns and trading basics.</p>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="icon">🛡️</div>
+        <div>
+            <strong>Risk Management</strong>
+            <p>Learn about position sizing, stop-loss concepts and trading risks.</p>
+        </div>
+    </div>
+
+    <a class="btn btn-secondary"
+       href="https://t.me/+TaxDfvYuylsyODc1"
+       target="_blank"
+       rel="noopener noreferrer">
+       🚀 JOIN FREE TELEGRAM CHANNEL →
+    </a>
+
+    <div class="notice">
+        ⚠️ <strong>Important Risk Warning</strong><br>
+        Forex and leveraged trading involve substantial risk and may not
+        be suitable for everyone. Educational content does not guarantee
+        profits or trading success.
+    </div>
+
+    <div class="disclaimer">
+        <strong>Disclaimer:</strong>
+        This page is for educational and informational purposes only.
+        No guaranteed returns or profit claims are made. Check the
+        legality and regulatory status of any broker or trading product
+        before participating. Indian residents should review applicable
+        RBI and SEBI rules before undertaking forex transactions.
+    </div>
+
+    <div class="footer">
+        Powered by
+        <br>
+        <a href="https://t.me/+3XoqJNLxYHswNTc1"
+           target="_blank"
+           rel="noopener noreferrer">
+           ADSBUILD AGENCY
+        </a>
+        <p>© 2026 Forex Trading Pro. All rights reserved.</p>
+    </div>
+
+</div>
+</body>
+</html>
